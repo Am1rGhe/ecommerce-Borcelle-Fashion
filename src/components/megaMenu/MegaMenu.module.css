@@ -77,6 +77,9 @@
 .menuList li {
   margin: 0;
 }
+.menuList li:hover{
+ text-decoration: underline;
+}
 
 .menuList a {
   text-decoration: none;
@@ -92,7 +95,7 @@
 }
 
 .saleItem {
-  color: #e74c3c !important;
+  color: #C51818!important;
   font-weight: 500;
 }
 
