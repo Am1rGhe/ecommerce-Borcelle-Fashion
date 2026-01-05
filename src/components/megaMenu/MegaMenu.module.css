@@ -1,0 +1,153 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.megaMenu {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menuContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menuList li {
+  margin: 0;
+}
+
+.menuList a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.menuList a:hover {
+  color: #000;
+}
+
+.saleItem {
+  color: #e74c3c !important;
+  font-weight: 500;
+}
+
+.boldItem {
+  font-weight: 600 !important;
+}
+
+.featuredProducts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.featuredProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.featuredProduct img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.featuredProduct p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .menuContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuContent {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .featuredProducts {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .featuredProduct img {
+    height: 200px;
+  }
+}
+

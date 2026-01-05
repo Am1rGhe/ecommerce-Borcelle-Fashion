@@ -1,0 +1,91 @@
+
+.header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 30px;
+    height: 100px;
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+.header img{
+    height: 70px;
+}
+.buttonsContainer{
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+.buttonsContainer>button{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 5px;
+}
+
+.buttonsContainer button:hover{
+    border-bottom: 1px black solid;
+}
+
+.buttonsContainer button.active {
+    border-bottom: 1px black solid;
+}
+.lastComponent{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    
+}
+
+.headerSvg{
+    height: 20px;
+    stroke: black;
+    stroke-width: 1;
+}
+
+
+.lastComponent button{
+    background-color: transparent;
+    padding: 5px 5px;
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+.svgContainer  {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.cartButton {
+    position: relative;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}

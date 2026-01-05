@@ -1,0 +1,46 @@
+.overlay{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease;
+    
+}
+.open {
+    transform: translateY(0);
+}
+
+
+.overlay input{
+    color: black;
+    height: 70px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: none;
+    border-bottom:#ccc 1px solid ;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.overlay input::placeholder{
+    color: #D2D4D9;
+    font-size: 20px;
+    font-weight: 100;
+}
+.overlay input:focus{
+    border: none;
+    outline: none;
+}
+.overlay button{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
