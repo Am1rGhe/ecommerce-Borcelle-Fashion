@@ -7,10 +7,12 @@
     padding: 0 20px;
     font-size: 30px;
     height: 100px;
-    position: relative;
+    position: fixed;
     z-index: 1000;
     background-color: white;
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    
 }
 .header img{
     height: 70px;
